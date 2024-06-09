@@ -6,10 +6,12 @@ name = "pypi"
 [packages]
 django = "*"
 wagtail = "*"
-pymysql = "*"
 django-environ = "*"
 
 [dev-packages]
+
+[production]
+pymysql = "*"
 
 [requires]
 python_version = "3.11"
