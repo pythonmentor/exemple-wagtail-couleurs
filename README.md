@@ -1,0 +1,1 @@
+# Exemple minimal d'application wagtail

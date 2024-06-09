@@ -1,0 +1,17 @@
+
+services:
+    mariadb:
+        image: mariadb:10.6
+        container_name: wagtail-colors-mariadb-43306
+        restart: always
+        ports:
+            - 43306:3306
+        environment:
+            - MYSQL_DATABASE=example
+            - MYSQL_USER=example
+            - MYSQL_PASSWORD=example
+            - MYSQL_ROOT_PASSWORD=example
+        volumes:
+            - mariadb-43306:/var/lib/mysql
+volumes:
+    mariadb-43306:
